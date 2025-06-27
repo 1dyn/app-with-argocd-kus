@@ -7,4 +7,4 @@ namePrefix: dev-
 configMapGenerator:
   - name: db-env
     envs:
-      -dev.env
+      - dev.env
