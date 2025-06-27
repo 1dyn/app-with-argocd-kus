@@ -16,7 +16,8 @@ spec:
         - name: mysql
           image: mysql:5.7
           envFrom:
-            - name: db-env
+            - configMapRef:
+                name: db-env
           ports:
             - containerPort: 3306
           volumeMounts:
