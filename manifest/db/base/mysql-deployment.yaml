@@ -15,7 +15,7 @@ spec:
       containers:
         - name: mysql
           image: mysql:5.7
-          envForm:
+          envFrom:
             - name: db-env
           ports:
             - containerPort: 3306
