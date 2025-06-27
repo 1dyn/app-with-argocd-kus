@@ -1,0 +1,10 @@
+resources:
+  - ../../base
+
+namespace: dev
+namePrefix: dev-
+
+configMapGenerator:
+  - name: db-env
+    envs:
+      -dev.env
